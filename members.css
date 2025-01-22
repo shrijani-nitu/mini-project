@@ -1,0 +1,42 @@
+body {
+  font-family: roboto-regular;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.option-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.option {
+  /*border: 1px solid #ccc;*/
+  padding: 30px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.option img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius:10px;
+}
+.option:hover{
+  background:grey;
+  }
+
+/*button {
+  background-color:grey;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 10px;
+  }*/

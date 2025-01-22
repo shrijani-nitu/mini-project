@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Playbook Pricing</title>
+<style>
+body {
+  font-family: roboto-regular;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.plan {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.plan h2 {
+  margin-bottom: 10px;
+}
+
+.plan .price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.plan .month {
+  font-size: 14px;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan li {
+  margin-bottom: 5px;
+}
+
+.plan .highlight {
+  color: #007bff;
+}
+
+.plan .button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.plan.most-popular {
+  background-color: #e6f7ff;
+}
+</style>
+</head>
+<body>
+
+<h1>Choose the perfect plan</h1>
+
+<div class="container">
+  <div class="plan">
+    <h2>Free</h2>
+    <div class="price">$0</div>
+    <div class="month">/month</div>
+    <button class="button">Subscribed</button>
+    <ul>
+      <li>Getting started</li>
+      <li>100 GB</li>
+      <li>10 team members</li>
+      <li>Artist or designer? <a href="#">Apply for 4TB with a portfolio link</a></li>
+    </ul>
+  </div>
+
+  <div class="plan most-popular">
+    <h2>Pro</h2>
+    <div class="price">$12</div>
+    <div class="month">/month/playbook</div>
+    <button class="button">Subscribe</button>
+    <ul>
+      <li>Most popular for small agencies</li>
+      <li>Everything in Free</li>
+      <li class="highlight">5TB (5,000 GB)</li>
+      <li class="highlight">Unlimited guests</li>
+      <li class="highlight">Guests have unlimited downloads (in zip format)</li>
+      <li class="highlight">Unlimited publishing and templates</li>
+      <li class="highlight">Password protected shared boards</li>
+    </ul>
+  </div>
+
+  <div class="plan">
+    <h2>Team</h2>
+    <div class="price">$250</div>
+    <div class="month">/month/playbook</div>
+    <button class="button">Subscribe</button>
+    <a href="#" class="button">Book a demo</a>
+    <ul>
+      <li>Most popular for teams</li>
+      <li>Everything in Pro</li>
+      <li class="highlight">Unlimited team members</li>
+      <li class="highlight">Admin-managed roles and permissions</li>
+      <li class="highlight">AI tagging and search</li>
+      <li class="highlight">Import assistance</li>
+      <li class="highlight">Desktop app</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Playbook Name</title>
+<style>
+body {
+    text-align: left;
+    margin: 50px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.reserved-info {
+    color: #888;
+    font-size: 12px;
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<h1>What would you like to call your playbook?</h1>
+
+<p class="reserved-info">This shortcut slug is reserved for Pro and Team plans. For all other users, they must remain active to keep this reserved.</p>
+
+
+<input type="text" id="playbookName" value=" ">
+
+<p id="error" class="error">This name is unavailable. Please try another name.</p>
+
+<script>
+const playbookNameInput = document.getElementById('playbookName');
+const errorElement = document.getElementById('error');
+
+playbookNameInput.addEventListener('input', () => {
+    // Check if the input is empty
+    if (playbookNameInput.value.trim() === '') {
+        errorElement.textContent = 'Please enter a name.';
+        errorElement.style.display = 'block';
+        return;
+    }
+
+    // Check if the name is still unavailable (you would need to implement this logic based on your server-side validation)
+    const isNameAvailable = false; // Replace with your actual validation logic
+
+    if (!isNameAvailable) {
+        errorElement.textContent = 'This name is unavailable. Please try another name.';
+        errorElement.style.display = 'block';
+    } else {
+        errorElement.style.display = 'none';
+    }
+});
+</script>
+
+</body>
+</html>

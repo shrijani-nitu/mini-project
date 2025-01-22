@@ -1,0 +1,67 @@
+body {
+  font-family:roboto-regular;
+  margin: 0;
+  padding: 29px;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  position: relative;
+}
+
+#playbookName {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.note {
+  font-size: 14px;
+  color: #333;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.guidelines {
+  margin-top: 20px;
+}
+
+.guidelines h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.guidelines ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.guidelines li {
+  margin-bottom: 5px;
+}
+
+.checkbox {
+  margin-top: 20px;
+}
